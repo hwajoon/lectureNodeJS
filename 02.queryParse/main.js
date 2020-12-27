@@ -11,6 +11,24 @@ var app = http.createServer((request, response)=>{
     var _url = request.url;
     var queryData = url.parse(_url, true).query;
 
+    console.log("url.parse(_url, true) = ", url.parse(_url, true));
+    /*
+      url.parse(_url, true) =  Url {
+        protocol: null,
+        slashes: null,
+        auth: null,
+        host: null,
+        port: null,
+        hostname: null,
+        hash: null,
+        search: null,
+        query: [Object: null prototype] {},
+        pathname: '/',
+        path: '/',
+        href: '/'
+     }  
+    */
+
     console.log(`request.url = ${request.url}`);
     console.log(`queryData.id = ${queryData.id}`);
 

@@ -59,7 +59,8 @@ var app = http.createServer((request, response)=>{
         `;
 
         console.log("read template = ", template);
-
+        
+        response.writeHead(200);
         response.end(template);        
     });
     
