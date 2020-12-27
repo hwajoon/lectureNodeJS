@@ -1,7 +1,6 @@
 var fs = require('fs');  
 
-console.log("entry");
-
+/*
 fs.readFile('CSS', 'utf8', function(err, data){
 
     console.log("call");
@@ -11,3 +10,8 @@ fs.readFile('CSS', 'utf8', function(err, data){
 
     console.log(data);
 });
+*/
+
+fs.readdir('./', (err, fileList)=>{
+    console.log(fileList);
+})

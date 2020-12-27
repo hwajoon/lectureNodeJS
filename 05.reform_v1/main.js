@@ -7,6 +7,9 @@ const { exception } = require('console');
 // localhost:9090/?id=CSS
 // localhost:9090/?id=JavaScript
 
+
+// pathname
+
 var app = http.createServer((request, response)=>{
     var _url = request.url;
     var queryData = url.parse(_url, true).query;
