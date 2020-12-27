@@ -2,6 +2,11 @@ var http = require('http');  // http module    // module.exports = { function cr
 var fs = require('fs');      // fs module      // var fs = {}   module.exports = fs;
 var url = require('url');    // url module
 //const { exception } = require('console');
+
+// localhost:9090/?id=HTML
+// localhost:9090/?id=CSS
+// localhost:9090/?id=JavaScript
+
 var app = http.createServer((request, response)=>{
     var _url = request.url;
     var queryData = url.parse(_url, true).query;
